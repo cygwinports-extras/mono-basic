@@ -1,0 +1,46 @@
+mono-basic
+------------------------------------------
+Mono Visual Basic.NET runtime and compiler
+
+Runtime requirements:
+  mono-2.4.3-1
+  mono-mscorlib2.0-2.4.3-1
+  mono-System2.0-2.4.3-1
+  mono-System-Windows-Forms2.0-2.4.3-1
+
+Build requirements:
+  cygwin-1.7.0-67
+  cygport-0.3.10-1
+  make-3.81-2
+  mono-2.4.3-1
+
+Canonical website:
+  http://www.mono-project.com/
+
+Canonical download:
+  http://ftp.novell.com/pub/mono/sources/mono-basic/
+
+-------------------------------------------
+
+Build instructions:
+  unpack mono-basic-2.4.2-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./mono-basic-2.4.2-X.cygport all
+
+This will create:
+  /usr/src/mono-basic-2.4.2-X-src.tar.bz2
+  /usr/src/mono-basic-2.4.2-X.tar.bz2
+  /usr/src/mono-Microsoft-VisualBasic8.0-2.4.2-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 2.4.2-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/

@@ -1,0 +1,4 @@
+category: DotNET
+requires: mono mono-mscorlib2.0 mono-Microsoft-VisualBasic8.0 mono-System2.0
+sdesc: "Mono Visual Basic.NET compiler"
+ldesc: "Mono Visual Basic.NET runtime and compiler"

@@ -1,0 +1,18 @@
+inherit mono
+
+DESCRIPTION="Mono Visual Basic runtime and compiler"
+
+PKG_NAMES="${PN} mono-Microsoft-VisualBasic8.0"
+mono_basic_CONTENTS="--exclude=gac usr/"
+mono_Microsoft_VisualBasic8_0_CONTENTS="usr/lib/mono/gac/"
+
+MAKEOPTS+=" -j1 PLATFORM=linux"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	./configure --prefix=/usr
+	# vbnc itself won't compile; appears to be too many files at once
+	cp -f class/lib/bootstrap/vbnc.exe class/lib/vbnc/vbnc.exe
+	cygmake
+}
