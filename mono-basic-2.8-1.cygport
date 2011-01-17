@@ -3,8 +3,8 @@ inherit mono
 DESCRIPTION="Mono Visual Basic runtime and compiler"
 
 PKG_NAMES="${PN} mono-Microsoft-VisualBasic8.0"
-mono_basic_CONTENTS="--exclude=gac usr/"
-mono_Microsoft_VisualBasic8_0_CONTENTS="usr/lib/mono/gac/"
+mono_basic_CONTENTS="--exclude=Microsoft.VisualBasic usr/"
+mono_Microsoft_VisualBasic8_0_CONTENTS="usr/lib/mono/gac/Microsoft.VisualBasic/"
 
 MAKEOPTS+=" -j1 PLATFORM=linux"
 
