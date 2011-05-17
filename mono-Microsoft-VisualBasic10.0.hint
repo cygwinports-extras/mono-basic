@@ -1,5 +1,5 @@
 category: DotNET
 requires: mono
 external-source: mono-basic
-sdesc: "Mono Visual Basic.NET runtime (2.0 profile)"
+sdesc: "Mono Visual Basic.NET runtime (4.0 profile)"
 ldesc: "Mono Visual Basic.NET runtime and compiler"

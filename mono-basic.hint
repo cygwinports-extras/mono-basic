@@ -1,4 +1,4 @@
 category: DotNET
-requires: mono mono-Microsoft-VisualBasic8.0
+requires: mono mono-Microsoft-VisualBasic8.0 mono-Microsoft-VisualBasic10.0
 sdesc: "Mono Visual Basic.NET compiler"
 ldesc: "Mono Visual Basic.NET runtime and compiler"

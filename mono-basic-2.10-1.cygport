@@ -1,0 +1,17 @@
+inherit mono
+
+DESCRIPTION="Mono Visual Basic runtime and compiler"
+
+PKG_NAMES="${PN} mono-Microsoft-VisualBasic8.0 mono-Microsoft-VisualBasic10.0"
+mono_basic_CONTENTS="--exclude=Microsoft.VisualBasic usr/"
+mono_Microsoft_VisualBasic8_0_CONTENTS="usr/lib/mono/gac/Microsoft.VisualBasic/8.0.*"
+mono_Microsoft_VisualBasic10_0_CONTENTS="usr/lib/mono/gac/Microsoft.VisualBasic/10.0.*"
+
+MAKEOPTS+=" -j1 PLATFORM=linux"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	./configure --prefix=/usr
+	cygmake
+}
